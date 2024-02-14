@@ -20,10 +20,14 @@
             <input 
                 type="text"
                 placeholder="Cerca un film o serie..."
-                v-model="SearchText"
+                v-model="store.SearchText"
             >
 
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <i 
+             class="fa-solid fa-magnifying-glass"
+             @click="$emit('getInformations')"
+            
+            ></i>
         </div>
     </header>
 </template>
